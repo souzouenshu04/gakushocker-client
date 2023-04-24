@@ -1,0 +1,42 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.34",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "framer-motion": "^10.12.4",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@chakra-ui/storybook-addon": "^4.0.16",
+    "@storybook/addon-essentials": "^7.0.6",
+    "@storybook/addon-interactions": "^7.0.6",
+    "@storybook/addon-links": "^7.0.6",
+    "@storybook/blocks": "^7.0.6",
+    "@storybook/nextjs": "^7.0.6",
+    "@storybook/react": "^7.0.6",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "babel-loader": "^8.3.0",
+    "eslint-plugin-storybook": "^0.6.11",
+    "storybook": "^7.0.6"
+  }
+}

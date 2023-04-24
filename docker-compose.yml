@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  client:
+    build:
+      context: .
+    platform: linux/arm64
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    container_name: client
+    tty: true
+    environment:
+      - WATCHPACK_POLLING=true
+    ports:
+      - "3000:3000"
+    networks:
+      dev-client-network:
+
+networks:
+  dev-client-network:
+    driver: bridge
